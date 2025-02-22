@@ -93,14 +93,14 @@ export default function TodosHome() {
       </div>
 
       {/* Todos List */}
-      <ul className="space-y-2">
+      <ul className="space-y-2 flex flex-col">
         {todos.map((todo) => (
           <li
             key={todo.id}
             className="flex justify-between items-center bg-gray-100 p-2 rounded"
           >
-            <span>{todo.title}</span>
-            <div className="space-x-2">
+            <span className="flex-1">{todo.title}</span>
+            <div className="space-x-2 w-fit">
               <button
                 className="bg-yellow-500 text-white px-2 py-1 rounded"
                 onClick={() => setEditingTodo(todo)}
