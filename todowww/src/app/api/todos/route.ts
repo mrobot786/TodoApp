@@ -1,7 +1,7 @@
 import { ApiResponse, Todo } from '@/types/todos';
 import { NextResponse } from 'next/server';
 
-const API_URL = 'http://localhost:8000/todos';
+const API_URL = 'https://todoapp-c3rq.onrender.com/todos'; //'http://localhost:8000/todos'; <---local Backend
 
 export async function GET(): Promise<NextResponse<ApiResponse<Todo[]>>> {
   try {
